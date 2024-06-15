@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+}
+
+$color: #fff;
+
+
+.header {
+  height: 95vh;
+}
+
+.big-head {
+  width: 90vw;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("./assets/img/hero.jpg");
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn-action {
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: $color;
+  /* &:hover {
+    
+  } */
+
+  position: absolute;
+}
+
+
+
+.title {
+  color: red
+}
