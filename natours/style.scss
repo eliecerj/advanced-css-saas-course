@@ -6,29 +6,32 @@ $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* 1rem = 10px 
+  box-sizing: inherit; //forcing inheritance
+  }
+  
+  html {
+    /* 1rem = 10px 
     it´s not a good practice to put font size on px, the default size is 16px so
     we´re going to set in % (10/16 = 0.625) calculated value 10px
     rem is calculated from root font size
-  */
-  font-size: 62.5%; 
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  // font-size: 16px;
-  line-height: 1.7;
-  color: $color-grey-dark;
-  padding: 30px;
-}
+    */
+    font-size: 62.5%; 
+    }
+    
+    body {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      // font-size: 16px;
+      line-height: 1.7;
+      color: $color-grey-dark;
+      padding: 30px;
+      box-sizing: border-box;
+      }
 
 $color: $color-white;
 
