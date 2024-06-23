@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; //forcing inheritance
+}
+
+html {
+  /* 
+    it´s not a good practice to put font size on px, the default size is 16px so
+    we´re going to set in % (10/16 = 0.625) calculated value 10px
+    rem is calculated from root font size
+    */
+    // this defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
